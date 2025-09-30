@@ -1,0 +1,90 @@
+################################################################################
+# tuneos.list.chroot                                                           #
+# ------------------                                                           #
+#                                                                              #
+# Note: This list is groups based on the default sections in Synaptic Package  #
+#       manager on Debian 13.                                                  #
+#                                                                              #
+################################################################################
+
+## Cross Platform
+dosfstools
+exfatprogs
+ntfs-3g
+
+## Development
+dolphin-plugins
+kompare
+
+## Editors
+libreoffice-calc
+libreoffice-common
+libreoffice-draw
+libreoffice-math
+libreoffice-writer
+nano
+vim
+
+## Email
+thunderbird
+
+## Graphics
+digikam
+gwenview
+inkscape
+kamera
+kde-spectacle
+kolourpaint
+okular
+pdfarranger
+
+## KDE Desktop environment
+ffmpegthumbs
+filelight
+kcalc
+konsole
+okteta
+plasma-browser-integration
+plasma-discover
+sddm
+
+## Kernel and modules
+linux-image-rt-amd64
+linux-headers-rt-amd64
+
+## Miscellaneous - Graphical
+papirus-icon-theme
+
+## Multimedia
+audacity
+pavucontrol
+# tuxguitar
+
+## Networking
+kget
+ktorrent
+krdc
+nfs-common
+samba-common
+wakeonlan
+#wireshark
+
+## System Administration
+# bleachbit
+synaptic
+
+## Utilities
+7zip
+autofs
+
+## TuneOS-specific branding and defaults
+#tuneos-defaults
+#tuneos-artwork
+
+## Version Control Systems
+git
+
+## Video Software
+ffmpeg
+ffmpegthumbnailer
+vlc

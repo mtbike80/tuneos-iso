@@ -1,6 +1,6 @@
 # TuneOS Build System
 
-This repository contains the configuration files and tooling to **build the TuneOS ISO** — a Debian 13–based distribution optimized for **audio production** and **software-defined radio (SDR)**.
+This repository contains the configuration files and tooling to **build the TuneOS ISO** — a Debian 13–based distribution optimized for **audio production** and everyday use.
 
 ---
 

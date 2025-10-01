@@ -8,83 +8,85 @@
 ################################################################################
 
 ## Cross Platform
-dosfstools
-exfatprogs
-ntfs-3g
+#dosfstools
+#exfatprogs
+#ntfs-3g
 
 ## Development
-dolphin-plugins
-kompare
+#dolphin-plugins
+#kompare
 
 ## Editors
-libreoffice-calc
-libreoffice-common
-libreoffice-draw
-libreoffice-math
-libreoffice-writer
-nano
-vim
+#libreoffice-calc
+#libreoffice-common
+#libreoffice-draw
+#libreoffice-math
+#libreoffice-writer
+#nano
+#vim
 
 ## Email
-thunderbird
+#thunderbird
 
 ## Graphics
-digikam
-gwenview
-inkscape
-kamera
-kde-spectacle
-kolourpaint
-okular
-pdfarranger
+#digikam
+#gwenview
+#inkscape
+#kamera
+#kde-spectacle
+#kolourpaint
+#okular
+#pdfarranger
 
 ## KDE Desktop environment
-ffmpegthumbs
-filelight
-kcalc
-konsole
-okteta
-plasma-browser-integration
-plasma-discover
-sddm
+#ffmpegthumbs
+#filelight
+#kcalc
+#kde-standard
+#konsole
+#okteta
+#plasma-browser-integration
+#plasma-discover
+#sddm
 
 ## Kernel and modules
-linux-image-rt-amd64
-linux-headers-rt-amd64
+#linux-image-rt-amd64
+#linux-headers-rt-amd64
 
 ## Miscellaneous - Graphical
-papirus-icon-theme
+#papirus-icon-theme
 
 ## Multimedia
-audacity
-pavucontrol
+#audacity
+#pavucontrol
 # tuxguitar
 
 ## Networking
-kget
-ktorrent
-krdc
-nfs-common
-samba-common
-wakeonlan
+#kget
+#ktorrent
+#krdc
+#nfs-common
+#samba-common
+#wakeonlan
 #wireshark
 
 ## System Administration
 # bleachbit
-synaptic
+#synaptic
 
 ## Utilities
-7zip
-autofs
+#7zip
+#autofs
 
 ## TuneOS-specific branding and defaults
-#tuneos-defaults
 #tuneos-artwork
+#tuneos-defaults
+#tuneos-meta
 
 ## Version Control Systems
-git
+#git
 
 ## Video Software
-ffmpeg
-ffmpegthumbnailer
-vlc
+#ffmpeg
+#ffmpegthumbnailer
+#vlc

@@ -10,50 +10,41 @@
 # This script automates the steps to:                                          #
 #   1. Clean old build artifacts                                               #
 #   2. Configure live-build for Debian 13 (Trixie)                             #
-#   3. Build the ISO and save with a date-based filename                       #
+#   3. Build the ISO                                                           #
 #                                                                              #
 ################################################################################
 
-set -e  ## This tell bash that, if any command exits with a non-zero status,
-        ## immediately stop running the script.
+set -euo pipefail
 
-ISO_NAME="tuneos-$(date+%Y%m%d).iso"
-
-echo "[   ] Cleaning old build artifacts..."
-sudo lb clean --purge                       ## Thie removes all build artifacts
-                                            ## from previous runs.
-echo "[ * ] Cleaning old build artifacts..."
+echo "Cleaning old build artifacts..."
+sudo lb clean || true
+echo "Cleaning old build artifacts...DONE"
 
 
-## Configure the live build ##
+## Configure the live build for installer-only ISO  ##
 
-echo "[   ] Configuring live-build..."
+echo "Configuring live-build..."
 
 ## Set up build parameters
 sudo lb config \
-  --distrubtion trixie \
+  --distribution trixie \
   --debian-installer netinst \
-  --archive-areas "main contrib non-free-firmware"
+  --binary-images iso-hybrid \
+  --archive-areas "main contrib non-free-firmware" \
+  --bootappend-live "quiet splash"
 
-echo "[ * ] Configuring live-build..."
+echo "Configuring live-build...DONE"
 
 
 ## Build the ISO ##
 
-echo "[   ] Building ISO. This may take a while..."
+echo "Building ISO. This may take a while..."
 sudo lb build
-echo "[ * ] Building ISO. This may take a while..."
+echo "Building ISO. This may take a while...DONE"
 
 
-## Rename the ISO ##
+read -p "Run build cleanup? [y/N]: " response
 
-## By default, the live-build output file is named "binary.hybrid.iso".
-## If the build succeeds, rename it. Else, throw an error and exit.
-
-if [ -f binary.hybrid.iso ]; then
-  mv binary.hybrid.iso "$ISO_NAME"
-  echo "[ * ] Build complete: $ISO_NAME"
-else
-  echo "[ ! ] Build failed: ISO not found."
-  exit 1
+if [[ "$response" == "y" || "$response" == "Y" ]]; then
+  ./build_cleanup.sh
 fi

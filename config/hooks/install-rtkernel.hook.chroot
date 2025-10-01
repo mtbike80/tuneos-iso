@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+apt update || true
+apt install -y linux-image-rt-amd64 || true

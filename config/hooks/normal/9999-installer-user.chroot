@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Create the installer user for the Calamares environment
+
+set -e
+
+echo "[TuneOS] Creating 'installer' user..."
+
+## Create user with no password
+usermod -m -s /bin/bash installer
+passwd -d installer
+
+## Add to sudo group for pkexec/calamares root actions
+usermod -aG sudo installer
+
+## Make sure home has correct permissions
+chown -R installer:installer /home/installer

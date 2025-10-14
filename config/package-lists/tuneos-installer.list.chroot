@@ -1,0 +1,22 @@
+## Core system
+systemd-sysv
+linux-image-rt-amd64
+grub-pc
+grub-efi-amd64
+os-prober
+sudo
+network-manager
+vim
+
+## Graphical installer environment
+calamares
+calamares-settings-debian
+qt5ct
+xorg
+openbox
+sddm
+sddm-theme-breeze
+plymouth
+#tuneos-artwork
+#tuneos-defaults
+#tuneos-meta

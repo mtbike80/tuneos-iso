@@ -1,0 +1,10 @@
+
+Start-Date: 2025-10-14  16:08:15
+Commandline: apt-get install -o APT::Install-Recommends=false --yes -o Acquire::Retries=5 -o APT::Color=true dctrl-tools
+Install: dctrl-tools:amd64 (2.24-3+b1)
+End-Date: 2025-10-14  16:08:15
+
+Start-Date: 2025-10-14  16:08:16
+Commandline: apt-get remove --auto-remove --purge --yes -o Acquire::Retries=5 -o APT::Color=true dctrl-tools
+Purge: dctrl-tools:amd64 (2.24-3+b1)
+End-Date: 2025-10-14  16:08:16

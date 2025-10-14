@@ -1,4 +1,13 @@
-.build
-cache
-chroot
-config
+cache/*
+chroot/var/cache/*
+chroot/var/lib/apt/lists/partial
+chroot/root
+chroot/etc/.pwd.lock
+chroot/etc/*shadow
+chroot/etc/passwd*
+chroot/etc/security/opasswd
+chroot/var/lib/apt/lists/lock
+chroot/var/lib/dpkg/lock*
+chroot/var/lib/dpkg/triggers/Lock
+chroot/var/log/apt/term.log
+chroot/var/log/btmp
